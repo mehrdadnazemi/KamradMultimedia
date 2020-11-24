@@ -4,6 +4,7 @@
     {
         public const string DbTablePrefix = "App";
 
-        public const string DbSchema = null;
+        public const string DbFileSchema = "File";
+        public const string DbMediaSchema = "Media";
     }
 }

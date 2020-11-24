@@ -31,9 +31,9 @@ namespace Kamrad.Multimedia.EntityFrameworkCore
         public DbSet<FileCategories> FileCategories { get; set; }
         public DbSet<FileComments> FileComments { get; set; }
         public DbSet<FileTypes> FileTypes { get; set; }
-        public DbSet<FileUserLike> FileUserLikes { get; set; }
+        public DbSet<FileUserLikes> FileUserLikes { get; set; }
 
-        public DbSet<Events> Events { get; set; }
+        public DbSet<MediaEvents> Events { get; set; }
         public DbSet<Genres> Genres { get; set; }
         public DbSet<MediaInfoFileParticipants> MediaInfoFileParticipants { get; set; }
         public DbSet<MediaInfos> MediaInfos { get; set; }
@@ -65,11 +65,6 @@ namespace Kamrad.Multimedia.EntityFrameworkCore
                 /* Configure mappings for your additional properties
                  * Also see the MultimediaEfCoreEntityExtensionMappings class
                  */
-            });
-
-            builder.Entity<AppFile>(b =>
-            {
-                b.ToTable("Files");
             });
 
             /* Configure your own tables/entities inside the ConfigureMultimedia method */

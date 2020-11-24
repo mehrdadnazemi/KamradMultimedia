@@ -4,15 +4,17 @@ using Kamrad.Multimedia.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using Volo.Abp.EntityFrameworkCore;
 
 namespace Kamrad.Multimedia.Migrations
 {
     [DbContext(typeof(MultimediaMigrationsDbContext))]
-    partial class MultimediaMigrationsDbContextModelSnapshot : ModelSnapshot
+    [Migration("20201125181803_AddMultimediaTables")]
+    partial class AddMultimediaTables
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder

@@ -8,6 +8,13 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Compile Remove="Migrations\20201124134035_AddMultimediaTables.cs" />
+    <Compile Remove="Migrations\20201124134035_AddMultimediaTables.Designer.cs" />
+    <Compile Remove="Migrations\20201125084307_AddMultimediaTables.cs" />
+    <Compile Remove="Migrations\20201125084307_AddMultimediaTables.Designer.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
     <ProjectReference Include="..\Kamrad.Multimedia.EntityFrameworkCore\Kamrad.Multimedia.EntityFrameworkCore.csproj" />
   </ItemGroup>
 

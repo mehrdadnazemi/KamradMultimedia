@@ -11,7 +11,7 @@ namespace Kamrad.Multimedia.Files
         public AppFile()
         {
             FileComments = new HashSet<FileComments>();
-            FileUserLikes = new HashSet<FileUserLike>();
+            FileUserLikes = new HashSet<FileUserLikes>();
             MediaInfoFileParticipants = new HashSet<MediaInfoFileParticipants>();
         }
         public double Duration { get; set; }
@@ -34,7 +34,7 @@ namespace Kamrad.Multimedia.Files
         public virtual FileTypes FileType { get; set; }
         public virtual MediaInfos MediaInfoFkNavigation { get; set; }
         public virtual ICollection<FileComments> FileComments { get; set; }
-        public virtual ICollection<FileUserLike> FileUserLikes { get; set; }
+        public virtual ICollection<FileUserLikes> FileUserLikes { get; set; }
         public virtual ICollection<MediaInfoFileParticipants> MediaInfoFileParticipants { get; set; }
         public DateTime CreationTime { get; set; }
         public Guid? CreatorId { get; set; }
